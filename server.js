@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
 
 
-mongoose.connect('mongodb+srv://spark:spark@cluster0.eu88m.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
+//mongoose.connect('mongodb+srv://spark://enteryourpassword//@cluster0.eu88m.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 
 const Hotel = mongoose.model('Hotel', { email: String, password: String, type: String , name :String, longitude:String, latitude:String,imageURL:String,rating:String});
 const User = mongoose.model('User', { email: String, password: String, address: String ,longitude:String, latitude:String});
